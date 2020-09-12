@@ -1,0 +1,131 @@
+.App {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  // styels for main container
+  .container {
+    margin-top: 25px;
+    width: 98%;
+    max-width: 600px;
+    height: 600px;
+  }
+
+  // styles for search-input
+  .search-input {
+    position: relative;
+    input {
+      width: 95%;
+      font-size: 1.6rem;
+      padding: 1% 2%;
+      font-weight: bold;
+      color: navy;
+      border: 0.5px solid lightgrey;
+      border-radius: 5px;
+    }
+
+    // style for result list
+    .result {
+      display: none;
+      background-color: white;
+      width: 99%;
+      margin-left: 0%;
+      border-radius: 10px;
+      top: 63%;
+      position: absolute;
+      list-style: none;
+      padding-left: 0%;
+
+      li {
+        color: navy;
+        border: 0.5px solid lightgrey;
+        padding: 0%;
+        padding: 1% 1%;
+        cursor: pointer;
+        text-align: justify;
+        font-size: 1.2rem;
+      }
+
+      li:hover {
+        background-image: linear-gradient(45deg, navy, #1b1bda, #2222f9);
+        color: white;
+      }
+      .no-result:hover {
+        background-image: none;
+        color: navy;
+        cursor: default;
+      }
+    }
+
+    input:focus ~ .result {
+      display: block;
+    }
+  }
+  // styles for add question
+  .add-question-container {
+    margin-top: 3%;
+    width: 98%;
+
+    form {
+      .input-container {
+        margin: 1% 0%;
+        .lable {
+          font-weight: bold;
+          color: navy;
+          padding: 1% 0%;
+          font-size: 1.2rem;
+        }
+        input {
+          width: 98.5%;
+          font-size: 1.1rem;
+          border: 1px solid darkgrey;
+          border-radius: 5px;
+          padding: 1% 1%;
+          color: navy;
+        }
+
+        ul {
+          margin: 1% 0%;
+          padding: 0.2% 1.2%;
+          width: 30%;
+          list-style: none;
+
+          li {
+            margin: 2% 0%;
+            padding: 1% 5%;
+            color: navy;
+            font-weight: bold;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            border: 0.5px solid dimgrey;
+          }
+        }
+
+        .tag-container-button {
+          .tag-button {
+            background-image: linear-gradient(
+              to right,
+              #073579,
+              #1f15bd,
+              #084db5
+            );
+            padding: 1% 1%;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    button {
+      background-image: linear-gradient(to right, #e32e6f, #e72b79, #f1679d);
+      border: 0.5px solid white;
+      color: white;
+      padding: 1% 2%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}

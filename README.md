@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Text Search
 
-## Available Scripts
+It is a full stack text search app working as search bar for seaching query based on the tags and query string.
+This repository only React App and Rest API(Node Js) is there at https://github.com/dheerajk7/AdmitKard-Text-Search.git
 
-In the project directory, you can run:
+# Preview
 
-### `npm start`
+![preview image](./static/images/preview.gif)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# API Routes
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. /api/v1/question/create :-> To create new question in database.
 
-### `npm test`
+   ```
+   Fields Needed to Create Question :-
+   1. query
+   2. topic
+   3. tag array
+   ```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. /api/v1/search :-> To search query based on input string from database.
+   ```
+   Fields Needed to Search Question :-
+   1. searchKey
+   ```
 
-### `npm run build`
+# Techstack
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### HTML, SCSS, React, Rest API(Node JS), Mongo DB
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Instructions to install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone Rest API repository from https://github.com/dheerajk7/AdmitKard-Text-Search.git
+2. Install NPM if you have not installed yet.
+3. Go to project directory and run these commands to run API server
 
-### `npm run eject`
+   #### To install node Modules
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```
+   npm install
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   #### To run Node JS API server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```
+   npm start
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Clone React APP (https://github.com/dheerajk7/admitKard-text-search-react-app) and run following commands to run react app
 
-## Learn More
+   #### To install node Modules
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   #### To run react app
 
-### Code Splitting
+   ```
+   npm start
+   ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+5. Go and check at http://localhost:3000
 
-### Analyzing the Bundle Size
+# Directory Structure
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## API Directory Structure
 
-### Making a Progressive Web App
+`/` - all code files <br>
+`/config` - all configuration files <br>
+`/controllers` - all controllers files <br>
+`/models` - all database models files <br>
+`/routes` - all routes files <br>
+`/static` - all static files <br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## React App Repository directory Structure
 
-### Advanced Configuration
+React App repository (https://github.com/dheerajk7/admitKard-text-search-react-app)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+`/` - all react app files <br>
+`/src` - all react app code files <br>
+`/src/components`- all react components files <br>
+`/src/helpers` - all helpers files <br>
+`/src/styles` - all SCSS styles files <br>
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---

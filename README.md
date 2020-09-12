@@ -1,7 +1,7 @@
 # Text Search
 
 It is a full stack text search app working as search bar for seaching query based on the tags and query string.
-This repository only React App and Rest API(Node Js) is there at https://github.com/dheerajk7/AdmitKard-Text-Search.git
+This repository contain React App and Rest API(Node Js) is there at https://github.com/dheerajk7/AdmitKard-Text-Search.git
 
 # Preview
 
